@@ -6,9 +6,9 @@ const Book = ({book}) => {
     return (
         <Link to={`/book/${bookId}`} className="block">
 
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10 bg-[#F3F3F3]">
-                    <img className="w-[326px] h-[230px]" src={image} />
+                    <img className="w-[326px] h-[270px]" src={image} />
                 </figure>
                 <div className="card-body text-left">
                     <div className="flex gap-8">

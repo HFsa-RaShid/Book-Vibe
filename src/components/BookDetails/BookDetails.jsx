@@ -1,13 +1,42 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveBookRead } from "../../utility/localStorageRead";
+import { saveBookWishlist } from "../../utility/localStorageWishList";
+
+
 
 const BookDetails = () => {
     const books = useLoaderData();
     const {id} = useParams();
     const idInt = parseInt(id);
     const book=books.find(book => book.bookId === idInt);
-    console.log(book)
+    
+    const handleReadBook = () => {
+        if (saveBookRead(id) || !saveBookRead(id)) {
+            toast.success('Book added to Read list.');
+        } else {
+            toast.error('This book is already in your Read list.');
+        }
+    }
+
+    const handleWishlistBook = () => {
+        if (!saveBookRead(id)) {
+            toast.error('You have already read this book.');
+        } 
+        else {
+            
+            toast.success('Book added to Wishlist.');
+                
+        }
+        
+    }
+    
+
+   
+    
     return (
-        <div className="flex h-[500px] gap-8 mt-10">
+        <div className="flex h-[500px] gap-8 mt-10 px-20">
             <div className=" w-[50%] bg-[#F3F3F3] rounded-xl" >
                 <img src={book.image} className=" h-full flex items-center p-2 mx-auto" alt=""  />
             </div>
@@ -42,12 +71,12 @@ const BookDetails = () => {
                 </div>
 
                 <div className="flex gap-8 mt-5">
-                        <button className="text-black font-semibold px-4 py-2 rounded-xl border ">Read</button>
-                        <button className=" px-4 py-2 rounded-xl text-white bg-[#50B1C9]">Wishlist</button>
+                        <button onClick={handleReadBook} className="text-black font-semibold px-4 py-2 rounded-xl border ">Read</button>
+                        <button onClick={handleWishlistBook} className=" px-4 py-2 rounded-xl text-white bg-[#50B1C9]">Wishlist</button>
                 </div>
                 
             </div>
-            
+            <ToastContainer />
         </div>
     );
 };
