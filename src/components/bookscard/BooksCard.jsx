@@ -11,7 +11,7 @@ const BooksCard = () => {
     },[])
     return (
         <div>
-            <h1>Books</h1>
+            <h1  className="mb-10 mt-10 text-[40px]">Books</h1>
             <div className="grid grid-cols-3 gap-5">
                 {
                     books.map(book =><Book key={book.bookId} book={book}></Book>)
