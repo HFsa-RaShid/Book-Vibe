@@ -37,11 +37,11 @@ const BookDetails = () => {
    
     
     return (
-        <div className="flex h-[500px] gap-8 mt-10 px-20">
-            <div className=" w-[50%] bg-[#F3F3F3] rounded-xl" >
+        <div className="lg:flex h-[500px] gap-8 mt-10 px-20">
+            <div className=" lg:w-[50%] bg-[#F3F3F3] rounded-xl" >
                 <img src={book.image} className=" h-full flex items-center p-2 mx-auto" alt=""  />
             </div>
-            <div className="w-[50%] text-left">
+            <div className="lg:w-[50%] text-left">
                 <h1 className="text-[40px] font-bold text-left">{book.bookName}</h1>
                 <p className="text-[#131313CC] text-[20px] pb-2 ">By: {book.author}</p>
                 <hr></hr>

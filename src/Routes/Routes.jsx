@@ -8,7 +8,6 @@ import BookDetails from "../components/BookDetails/BookDetails";
 import ReadBooks from "../components/ReadBooks/ReadBooks";
 import WishList from "../components/wishList/WishList";
 import BookList from "../components/Booklist/BookList";
-import ListedAllBook from "../components/ListedAllBook/ListedAllBook";
 
 export const router = createBrowserRouter([
     {
