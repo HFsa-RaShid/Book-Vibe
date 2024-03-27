@@ -1,9 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+
 
 
 const ReadBooks = () => {
+    const read = useLoaderData()
+    
     return (
         <div>
-            read books
+            <p>{read.bookName}</p>
+            dvbdf
             
         </div>
     );

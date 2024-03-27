@@ -11,9 +11,9 @@ const BookDetails = () => {
     const {id} = useParams();
     const idInt = parseInt(id);
     const book=books.find(book => book.bookId === idInt);
-    
+  
     const handleReadBook = () => {
-        if (saveBookRead(id) || !saveBookRead(id)) {
+        if (saveBookRead(id) ) {
             toast.success('Book added to Read list.');
         } else {
             toast.error('This book is already in your Read list.');
@@ -21,13 +21,14 @@ const BookDetails = () => {
     }
 
     const handleWishlistBook = () => {
-        if (!saveBookRead(id)) {
-            toast.error('You have already read this book.');
+        if (saveBookWishlist(id) || saveBookRead(id)) {
+           
+                toast.success('Book added to Wishlist.');
+
         } 
         else {
-            
-            toast.success('Book added to Wishlist.');
-                
+            toast.error('You have already read this book.');
+      
         }
         
     }
