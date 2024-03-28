@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
      
-        <div className="navbar bg-base-100 container mx-auto mt-4">
+        <div className="navbar bg-base-100 container mx-auto mt-4 font">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Navbar = () => {
                         }
                to="/">Home</NavLink></li>
           <li><NavLink  className={({ isActive }) =>
-                            isActive ? 'bg-white font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                            isActive ? 'text-[#23BE0A]  font-semibold text-[18px]' : 'font-semibold text-[18px] '
                         }
  to="/listedBooks">Listed Books</NavLink></li>
           <li><NavLink  className={({ isActive }) =>
@@ -30,10 +30,17 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[18px]">
           
-          
-            <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/listedBooks">Listed Books</NavLink></li>
-          <li><NavLink to="/pageRead">Pages to Read</NavLink></li>
+        <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        }
+               to="/">Home</NavLink></li>
+          <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A]  font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        }
+ to="/listedBooks">Listed Books</NavLink></li>
+          <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        } to="/pageRead">Pages to Read</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end flex gap-1 lg:gap-3">

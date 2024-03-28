@@ -15,16 +15,16 @@ const Book = ({book}) => {
                         <button className="bg-[#17BE0A12] px-3 py-1 rounded-3xl text-[#23BE0A]">{tags[0]}</button>
                         <button className="bg-[#17BE0A12] px-3 py-1 rounded-3xl text-[#23BE0A]">{tags[1]}</button>
                     </div>
-                    <h2 className="card-title">{bookName}</h2>
-                    <p>By: {author}</p>
+                    <h2 className="card-title fonts text-[24px]">{bookName}</h2>
+                    <p className="font">By: {author}</p>
                     <hr className="mt-3 mb-3"></hr>
                     
-                    <div className="flex justify-between">
+                    <div className="flex justify-between font">
                         <div>
                         <p>{category}</p>
                         </div>
 
-                        <div className="flex items-center">
+                        <div className="flex items-center font">
                             <p>{rating}</p>
                             <CiStar />
                             

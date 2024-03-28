@@ -52,7 +52,7 @@ const PageRead = () => {
         <div className="mt-10 overflow-x-auto">
             <div className="inline-block min-w-full">
             <BarChart
-                width={1200}
+               width={window.innerWidth <= 768 ? window.innerWidth * 0.9 : 1200}
                 height={400}
                 data={readBookCard}
                 margin={{ top: 20, right: 30, left: 20, bottom: 5 }}

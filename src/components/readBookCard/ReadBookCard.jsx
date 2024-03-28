@@ -7,13 +7,13 @@ import PageRead from "../PageRead/PageRead";
 const ReadBookCard = ({readBook}) => {
     const {bookId,image,bookName,author,category,tags,totalPages,publisher,yearOfPublishing,rating}=readBook;
     return (
-        <div className="mb-10">
+        <div className="mb-10 font">
             <div className="lg:flex border rounded-xl lg:h-[275px] gap-6">
             <div className="p-5 lg:w-[270px] ">
                 <img src={image} className="h-full w-full bg-[#1313130D] rounded-xl" />
             </div>
             <div className="p-5">
-                <h1 className="text-[24px] font-bold">{bookName}</h1>
+                <h1 className="text-[24px] font-bold fonts">{bookName}</h1>
                 <p className="text-[#13131399] font-semibold pb-2 pt-3">By: {author}</p>
                 <hr></hr>
                 

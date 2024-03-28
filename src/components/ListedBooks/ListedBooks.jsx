@@ -54,10 +54,10 @@ const ListedBooks = () => {
         <div className="container mx-auto mt-7">
                         
                 <div className="text-center  bg-[#1313130D]  rounded-[16px] ">
-                <p className="font-bold p-5 text-[28px] text-[#131313]">Books</p>
+                <p className="font-bold p-5 text-[28px] text-[#131313] font">Books</p>
                 </div>
 
-                <div className="text-center">
+                <div className="text-center font">
                 <button className="btn btn-success text-white px-8 mt-6">Sort By</button>
                 </div>
 
@@ -69,8 +69,8 @@ const ListedBooks = () => {
                 >
                     <div className="text-center font-bold my-3">
                     <TabList>
-                        <Tab className="">Read Books</Tab>
-                        <Tab>Wishlist Books</Tab>
+                        <Tab >Read Books</Tab>
+                        <Tab >Wishlist Books</Tab>
 
                     </TabList>
                     </div>

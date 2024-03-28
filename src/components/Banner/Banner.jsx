@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         
 
-        <div>
+        <div className="fonts">
             <div className="h-[500px] bg-[#0D0D0D0D] mt-5 lg:flex rounded-xl container mx-auto px-20">
                 <div className="lg:w-[60%] pt-7 lg:mt-[120px] ">
                     <h1 className="font-bold text-[32px] lg:text-[46px] mb-[20px] lg:mb-[50px] text-center lg:text-left">Books to freshen up your bookshelf</h1>
