@@ -55,3 +55,7 @@ Features and Characteristics:
     A custom 404 route or not found page is implemented to gracefully handle navigation errors and guide users back to the main content.
 
 11. The website is responsive on desktop, and mobile devices.
+
+12. Show chart of wishlist percentage for all Books.
+
+13. Show all Fiction Books
