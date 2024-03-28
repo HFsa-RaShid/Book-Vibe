@@ -5,8 +5,10 @@ const ErrorPage = () => {
     const error = useRouteError();
     return (
         <div className="bg-slate-100 rounded-2xl w-[400px] mx-auto text-center mt-[150px] p-10 text-black ">
-            <h1>Oops!!</h1>
-            <p>{error.statusText || error.message}</p>
+            <h1 className="text-red-500 text-[40px]">404</h1>
+            
+            <h1 className="text-red-500 text-[40px] ">Oops!!</h1>
+            {/* <p>{error.statusText || error.message}</p> */}
             {
                 error.status === 404 && <div>
                     <h3>Page Not Found</h3>
