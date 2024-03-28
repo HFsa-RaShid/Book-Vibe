@@ -20,7 +20,7 @@ const Banner = () => {
  
                 </div>
                 <div className="lg:w-[40%] mt-[20px] lg:mt-[85px]">
-                    <img src="/Images/cover.png" className="w-[80%] h-[90%] rounded-2xl"/>
+                    <img src="/Images/preview.png" className="w-[80%] h-[90%] rounded-2xl"/>
                     
                 </div>
             </div>
