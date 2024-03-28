@@ -3,7 +3,7 @@
 
 WEBSITE NAME: Book Vibe
 
-[Live site URL] (https://whimsical-zabaione-2560d2.netlify.app/)
+[Live site URL] (https://6605ab5854c2bc0a09598f38--whimsical-zabaione-2560d2.netlify.app/)
 
 
 Features and Characteristics:
