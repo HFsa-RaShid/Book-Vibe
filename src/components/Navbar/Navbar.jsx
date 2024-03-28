@@ -22,6 +22,12 @@ const Navbar = () => {
           <li><NavLink  className={({ isActive }) =>
                             isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
                         } to="/pageRead">Pages to Read</NavLink></li>
+                        <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        } to="/fiction">Fiction</NavLink></li>
+                        <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        } to="/non-fiction">Non-Fiction</NavLink></li>
           
           </ul>
         </div>
@@ -41,6 +47,12 @@ const Navbar = () => {
           <li><NavLink  className={({ isActive }) =>
                             isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
                         } to="/pageRead">Pages to Read</NavLink></li>
+                        <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        } to="/fiction">Fiction</NavLink></li>
+                        <li><NavLink  className={({ isActive }) =>
+                            isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
+                        } to="/non-fiction">Non-Fiction</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end flex gap-1 lg:gap-3">
