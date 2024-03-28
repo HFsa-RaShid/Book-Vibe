@@ -13,8 +13,8 @@ const ReadBookCard = ({readBook}) => {
                 <img src={image} className="h-full w-full bg-[#1313130D] rounded-xl" />
             </div>
             <div className="p-5">
-                <h1 className="text-[24px] font-bold fonts">{bookName}</h1>
-                <p className="text-[#13131399] font-semibold pb-2 pt-3">By: {author}</p>
+                <h1 className="text-[24px] font-bold fonts text-center lg:text-start">{bookName}</h1>
+                <p className="text-[#13131399] font-semibold pb-2 pt-3 text-center lg:text-start">By: {author}</p>
                 <hr></hr>
                 
                 

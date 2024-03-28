@@ -27,7 +27,7 @@ const Navbar = () => {
                         } to="/fiction">Fiction</NavLink></li>
                         <li><NavLink  className={({ isActive }) =>
                             isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
-                        } to="/non-fiction">Non-Fiction</NavLink></li>
+                        } to="/percentageofwishlist">WishList Percentage</NavLink></li>
           
           </ul>
         </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
                         } to="/fiction">Fiction</NavLink></li>
                         <li><NavLink  className={({ isActive }) =>
                             isActive ? 'text-[#23BE0A] font-semibold text-[18px]' : 'font-semibold text-[18px] '
-                        } to="/non-fiction">Non-Fiction</NavLink></li>
+                        } to="/percentageofwishlist">WishList Percentage</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end flex gap-1 lg:gap-3">

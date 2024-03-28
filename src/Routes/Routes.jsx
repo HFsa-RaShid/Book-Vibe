@@ -5,11 +5,10 @@ import Home from "../components/Home/Home";
 import ListedBooks from "../components/ListedBooks/ListedBooks";
 import PageRead from "../components/PageRead/PageRead";
 import BookDetails from "../components/BookDetails/BookDetails";
-import ReadBooks from "../components/ReadBooks/ReadBooks";
-import WishList from "../components/wishList/WishList";
-import BookList from "../components/Booklist/BookList";
+
 import FictionBooks from "../components/Fiction/FictionBooks";
-import NonFictionBooks from "../components/Non-Fiction/NonFictionBooks";
+
+import PercentageOfWishlist from "../components/PercentageOfWishlist/PercentageOfWishlist";
 
 export const router = createBrowserRouter([
     {
@@ -41,8 +40,8 @@ export const router = createBrowserRouter([
 
         },
         {
-          path: "/non-fiction",
-          element: <NonFictionBooks></NonFictionBooks>,
+          path: "/percentageofwishlist",
+          element: <PercentageOfWishlist></PercentageOfWishlist>,
           
 
         },

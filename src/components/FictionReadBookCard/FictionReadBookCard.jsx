@@ -6,9 +6,9 @@ import { Link } from "react-router-dom";
 const FictionReadBookCard = ({readBook}) => {
     const {bookId,image,bookName,author}=readBook;
     return (
-        <div className="mb-10 mt-10 container mx-auto">
+        <div className="mb-2 mt-10 container mx-auto">
         
-        <div className="lg:flex border rounded-xl lg:h-[275px] gap-6">
+        <div className="lg:flex border rounded-xl lg:h-[275px]">
             <div className="p-5 lg:w-[270px] ">
                 <img src={image} className="h-full w-full bg-[#1313130D] rounded-xl" />
             </div>

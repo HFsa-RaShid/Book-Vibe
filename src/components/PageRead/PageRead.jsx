@@ -31,8 +31,6 @@ const PageRead = () => {
    
 
     
-    const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
-    
     
       const getPath = (x, y, width, height) => {
         return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -49,9 +47,10 @@ const PageRead = () => {
 
     
     return (
-        <div className="mt-10 overflow-x-auto">
+        <div className="mt-10 overflow-x-auto container mx-auto">
             <div className="inline-block min-w-full">
             <BarChart
+            
                width={window.innerWidth <= 768 ? window.innerWidth * 0.9 : 1200}
                 height={400}
                 data={readBookCard}

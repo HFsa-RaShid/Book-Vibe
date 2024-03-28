@@ -8,13 +8,13 @@ const WishListCard = ({wishList}) => {
     const {bookId,image,bookName,author,category,tags,totalPages,publisher,yearOfPublishing,rating}= wishList;
     return (
         <div className="mb-10 font">
-            <div className="flex border rounded-xl h-[275px] gap-6 ">
-            <div className="p-5 w-[270px]">
+            <div className="lg:flex border rounded-xl lg:h-[275px] gap-6 ">
+            <div className="p-5 lg:w-[270px]">
                 <img src={image} className="h-full bg-[#1313130D] w-full rounded-xl" />
             </div>
             <div className="p-5">
-                <h1 className="text-[24px] font-bold fonts">{bookName}</h1>
-                <p className="text-[#131313CC] pb-2 pt-3">By: {author}</p>
+                <h1 className="text-[24px] font-bold fonts text-center lg:text-start">{bookName}</h1>
+                <p className="text-[#131313CC] pb-2 pt-3 text-center lg:text-start">By: {author}</p>
                 <hr></hr>
                 
                 
